@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    height: 100vh;
+    flex-wrap: wrap; 
+
+}.Navbar{
+    margin-top: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: bisque;
+    position: absolute;
+    top: 0px;
+}.Navbar img{
+    position: absolute;
+    margin: 10px;
+    height: 70px;
+    width: 70px;
+}.Navbar h2{
+    position: absolute;
+    top: -15px; /*some weird bug arise here, initially i kept this at position top:40px then suddenly it came below navbar so i had to re-size it to -15 */
+    left: 90px;
+}.Navbar form{
+    position: absolute;
+    right: 40px;
+    top: 45px;
+
+}.Navbar .movieINP{
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(243, 219, 173);
+}.Navbar .searchmovie{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background-color: orange
+}.base{
+    /* this is the best way to give lenght and width it gets adjusted automaticlly  */
+    max-height: 85vh;
+    max-width: 1000px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(9, 117, 212);
+    position: absolute;
+    top: 110px;
+    overflow-y: scroll; 
+    display: flex;
+    flex-direction: column;
+    
+}.base::-webkit-scrollbar{
+    width: 10px;
+}.base::-webkit-scrollbar-thumb{
+    background-color: aquamarine;
+    border-radius: 10px;
+}.information{
+    width: 950px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: brown;
+}.imageAREA{
+    width: 475px;
+    height: 220px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.textAREA{
+    width: 475px;
+    height: 220px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    /* text-align: center; */
+}.textAREA button{
+    margin: 10px;
+    height: 30px;
+    width: 75px;
+    border-radius: 10px;
+    background-color: orange;
+    border: none;
+}.textAREA b{
+    font-size: 20px;
+    margin: 8px;
+}.textAREA i{
+    font-size: 18px;
+} img{
+    width: auto;
+    height: 220px;
+    padding: 5px;
+}
+
+/* detailed info  */
+.ground{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    background-color: rgb(190, 242, 242);
+    width: 80%;
+    border-radius: 10px;
+
+    /* flex-wrap: wrap; */
+}.ImagePoster img{
+    height: 450px;
+    margin-right: 30px;
+    margin-left: 5px;
+    border-radius: 10px;
+} h2{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    margin-top: 3%;
+} h2+p{ /*this will work on element next to h2 sibling of h2*/
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}.movieGenre {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}.movieGenre p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 20px;
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px;
+    background-color: beige;
+}.movieDetailss p{
+    font-size: 21px;
+    margin-bottom: 15px;
+}
